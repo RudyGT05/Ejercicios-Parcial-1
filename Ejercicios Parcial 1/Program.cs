@@ -1,39 +1,16 @@
 ﻿using System.Timers;
 
-int num1, num2, res;
-string op;
-Console.WriteLine("Ingrese el primer núemro");
-num1 = int.Parse(Console.ReadLine());
-Console.WriteLine("Ingrese el segundo número");
-num2 = int.Parse(Console.ReadLine());
-Console.WriteLine("Ingrese el operador");
-op = Console.ReadLine();
-if (op == "-")
-{
-    res = num1   - num2;
-    Console.WriteLine("El resultado es:" + res);
-}
-else if (op == "+")
-{
-    res=num1 + num2;
-    
-    Console.WriteLine("El resultado es:" + res);
-}
-else if (op == "*")
-{
-    res= num1 * num2;
-    Console.WriteLine("El resultado es:" + res);
-}
-else if (op == "/")
-{
-    res= num1 / num2;
-    Console.WriteLine("El resultado es:" + res);
-}
-else
-{
-    Console.WriteLine("Operador no disponible, se cerrara el programa...");
-}
+int num, tabla;
 
+Console.WriteLine("Ingrese el numero  que desea y se mostrará la su respectiva tabla de multiplicar del 1 al 10");
+num = int.Parse(Console.ReadLine());
+
+for (int i = 0; i <= 10; i++)
+{
+    tabla = num * i;
+    Console.WriteLine("*"+i+" = "+tabla);
+
+}
 
 
 
